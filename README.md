@@ -1,2 +1,2 @@
 # salary
-salary1
+[https://shaxqq.github.io/salary/index.html]
