@@ -1,0 +1,12 @@
+.salary {
+  padding-left: 10%;
+}
+.salary__input {
+  display: flex;
+  padding: 15px;
+}
+.salary__input--text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
