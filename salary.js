@@ -1,5 +1,5 @@
 sumInputs = function() {
-    var inputs = document.getElementsByTagName('input');
+    var inputs = document.getElementsByTagName('.salary__inner input');
         result = document.getElementById('total');
 
     var tarif = document.getElementById('tariff').value;
@@ -7,7 +7,7 @@ sumInputs = function() {
     var disc = document.getElementById('discount').value;
     disc = parseInt(disc);
     var tarifsum = tarif - ((tarif * disc) / 100);
-    console.log(tarifsum);
+    // console.log(tarifsum);
 
         sum = 0;            
     
@@ -20,6 +20,8 @@ sumInputs = function() {
         }
     
     }
-    
-    result.value = sum;
+    console.log(result.value =  parseInt(tarifsum+sum));
+    console.log(result.value =  sum);
+    console.log(result.value =  tarifsum);
+    result.value = parseInt(tarifsum+sum);
 }
