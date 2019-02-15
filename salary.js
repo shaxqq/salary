@@ -28,9 +28,23 @@ function extraServices(){
     }
     return sum
 }
+function tvAttachments(){
+    var e = document.querySelectorAll('select');
+    var arr = [];
+    for(var i = 0; i < e.length; i++ ){
+        var selectVal = e[i].options[e[i].selectedIndex].value;
+        arr.push(selectVal)
+    }
+    
+    var tvSum = arr.reduce(function(first, second){
+        return parseInt(first) + parseInt(second)
+    })
+    return tvSum 
+}
+
 function sumAll(){
     var result = document.getElementById('total');
-    var sumAll = extraServices() + salary() + discount()
+    var sumAll = extraServices() + salary() + discount() + tvAttachments()
     result.value = sumAll
 }
 
