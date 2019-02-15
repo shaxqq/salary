@@ -5,6 +5,10 @@
   display: flex;
   padding: 15px;
 }
+.salary__input--top {
+  display: flex;
+  padding: 15px;
+}
 .salary__input--text {
   display: flex;
   flex-direction: column;
