@@ -265,15 +265,17 @@ function prepcalendar(hd,cm,cy) {
 			cv.innerHTML=d-cd;
 
 			calvalarr[d]=addnull(d-cd,cm-(-1),cy);
-		}
+        }
+        
 		else {
 			cv.innerHTML='&nbsp;';
 			cv.onmouseover=null;
 			cv.onmouseout=null;
 			cv.onclick=null;
 			cv.style.cursor='default';
-			}
-	}
+            }
+    }
+    
 }
 
 prepcalendar('',ccm,ccy);
