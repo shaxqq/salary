@@ -34,6 +34,14 @@ function sumAll(){
     result.value = sumAll
 }
 
+
+
+
+
+
+
+
+
 // sumInputs = function () {
     // var discount = document.querySelector('.salary__input--top input').value;
     // var inputs = document.querySelector('.salary__inner input').value;
