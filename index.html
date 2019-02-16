@@ -79,16 +79,17 @@
                     <b class="salary__text">Антивирус</b>
                     <input type="text" id="antivirus">
                 </div>
-                <div class="salary__input--text">
-                    <b class="salary__text">Минус</b>
-                    <input type="text" id="minus">
-                </div>
+                
             </div>
         </div>
 
     </div>
-    <button class="salary__button" onclick="sumAll()" style="margin-left: 7%;">Посчитать</button>
-    Сумма : <input type="text" name="total" id="total" />
+    <div class="salary__input--text">
+        <b class="salary__text">Минус</b>
+        <input type="text" id="minus">
+    </div>
+    <!-- <button class="salary__button" onclick="sumAll()" style="margin-left: 7%;">Посчитать</button> -->
+    <!-- Сумма : <input type="text" name="total" id="total" /> -->
     
 
     <hr>
@@ -98,7 +99,11 @@
     по <input type="date" id="end">
     <button id="outDate" onclick="outDate()">Посчитать</button>  
     <br>
-    <p id="out1"></p><p id="out2"></p>
+    <div>
+        <p id="out1"></p>
+        <p id="out2"></p>
+        <p id="out3"></p>
+    </div>
 </div>  
     
     <script src="salary.js"></script>
