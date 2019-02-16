@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="salary.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js"></script>
     <title>salary</title>
 </head>
 <body>
@@ -92,14 +92,14 @@
     
 
     <hr>
-<form action="" style="margin-left: 10%;">
+<div  style="margin-left: 10%;">
     <br>
-    с <input style="width: 158px; " type="text" value="dd-mm-yy" onfocus="this.select();lcs(this)"
-        onclick="event.cancelBubble=true;this.select();lcs(this)">
-    по <input style="width: 158px;" type="text" value="dd-mm-yy" onfocus="this.select();lcs(this)"
-        onclick="event.cancelBubble=true;this.select();lcs(this)">
-        <button class="#">Посчитать</button>  
-    
+    с <input type="date" id="start">
+    по <input type="date" id="end">
+    <button id="outDate" onclick="outDate()">Посчитать</button>  
+    <br>
+    <p id="out1"></p><p id="out2"></p>
+</div>  
     
     <script src="salary.js"></script>
     
