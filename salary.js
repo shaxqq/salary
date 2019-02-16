@@ -61,13 +61,35 @@ function secondDate() {
 }
 
 
+function sumDay(){
+	var date1 = new Date(2019, 2, 0).getDate();
+	var fromDate = new Date('2019/02/01');
+	var fromYear = fromDate.getYear();
+	var fromMonth = fromDate.getMonth();
+	var firstMonthDaysTotal = new Date(fromYear, fromMonth + 1, 0).getDate();
+	var fromDay = fromDate.getDate();
+	var toDay = fromDate.getDate();
+	var perMonth = 300;
+	var perDay = perMonth / firstMonthDaysTotal;
+	var result = (toDay - fromDay + 1) * perDay
+	// var date1 = new Date(2019, 2, 0).getDate();
+	// var date2 = new Date(2019, 3, 0).getDate();
+	// var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+	// var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+	console.log(date1);
+	console.log(result);
+	// console.log(diffDays);
+	
+	}
+
 
 function outDate(){
 	var res = document.getElementById("outDate");
-	var outDate = firstDate() + secondDate();
+	var outDate = firstDate() + secondDate() + sumDay();
 	res.value = outDate;
 	
 }
+
 
 
 
