@@ -119,7 +119,6 @@ function newDiscount(){
 	var oldSum = document.getElementById("oldSum").value;
 	var percent = document.getElementById("percent").value;
 	var newSum = (oldSum / 100) * parseFloat(percent) - oldSum
-	
 	document.querySelector(".newSum").innerHTML = newSum || 0;
 	
 }
