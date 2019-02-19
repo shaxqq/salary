@@ -73,7 +73,7 @@ function sumDay() {
 	var firstMonthDaysTotal = new Date(fromYear, fromMonth + 1, 0).getDate();
 	var perDay = allSum / firstMonthDaysTotal;
 	var result = diffDays * perDay || 0;
-	document.getElementById("out3").innerHTML = parseFloat(result.toFixed(2))+parseInt(minus());	
+	document.getElementById("out3").innerHTML +=  parseFloat(result.toFixed(2))+parseInt(minus());	
 	// console.log("разниці мс", timeDiff);
 	// console.log(date2.getFullYear());
 	// console.log("номер месяца", date1.getMonth());

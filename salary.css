@@ -1,16 +1,58 @@
 .salary {
-  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20%;
+}
+.salary__input__top {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.salary__input__top--section {
+  display: flex;
+  flex-direction: column;
+}
+.salary__input__top--select {
+  align-self: flex-end;
+  border: 1px solid #cecece;
+  background: #F6F6f6;
+  border-radius: 8px;
+  outline: none;
 }
 .salary__input {
   display: flex;
-  padding: 15px;
+  justify-content: space-around;
+  padding-top: 20px;
 }
-.salary__input--top {
-  display: flex;
-  padding: 15px;
-}
-.salary__input--text {
+.salary__input--section {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+}
+.salary__input--select {
+  border: 1px solid #cecece;
+  background: #F6F6f6;
+  border-radius: 8px;
+  outline: none;
+}
+.salary__date {
+  text-align: center;
+}
+input {
+  font-size: 13px;
+  padding: 4px 0 4px 8px;
+  border: 1px solid #cecece;
+  background: #F6F6f6;
+  border-radius: 8px;
+  outline: none;
+}
+button {
+  font-size: 13px;
+  padding: 7px 10px 7px 10px;
+  border: 1px solid #cecece;
+  background: #F6F6f6;
+  border-radius: 8px;
+  outline: none;
+}
+button:hover {
+  box-shadow: inset 10px 0px 30px rgba(52, 55, 255, 0.884);
 }
