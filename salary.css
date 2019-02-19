@@ -5,43 +5,68 @@
 }
 .salary__input__top {
   display: flex;
-  justify-content: space-around;
   padding-top: 30px;
 }
 .salary__input__top--section {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
 }
 .salary__input__top--select {
   align-self: flex-end;
-  border: 1px solid #cecece;
-  background: #F6F6f6;
-  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  height: 25px;
   outline: none;
+  list-style: none;
+  padding: 0;
+  margin-left: 20px;
+}
+.salary__input__top--cursor {
+  font-size: 11px;
+  margin-left: 15px;
+}
+.salary__input__top--option {
+  display: none;
 }
 .salary__input {
   display: flex;
-  justify-content: space-around;
   padding-top: 20px;
 }
 .salary__input--section {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
 }
 .salary__input--select {
-  border: 1px solid #cecece;
-  background: #F6F6f6;
-  border-radius: 8px;
+  align-self: flex-end;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  height: 25px;
   outline: none;
 }
 .salary__date {
   text-align: center;
 }
+.salary__discount {
+  display: flex;
+  align-items: flex-end;
+}
+.salary__discount--button {
+  margin-left: 20px;
+}
+.newSum {
+  margin: 0 0 0 40px;
+}
 input {
   font-size: 13px;
   padding: 4px 0 4px 8px;
   border: 1px solid #cecece;
-  background: #F6F6f6;
+  background: #f6f6f65c;
   border-radius: 8px;
   outline: none;
 }
@@ -49,10 +74,17 @@ button {
   font-size: 13px;
   padding: 7px 10px 7px 10px;
   border: 1px solid #cecece;
-  background: #F6F6f6;
+  color: aliceblue;
   border-radius: 8px;
   outline: none;
+  background: linear-gradient(to right, #1fabfd 0%, #005ad1 50%, #1fabfd 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: .5s;
 }
 button:hover {
-  box-shadow: inset 10px 0px 30px rgba(52, 55, 255, 0.884);
+  background-position: right center;
+}
+hr {
+  width: 100%;
 }

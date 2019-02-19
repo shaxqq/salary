@@ -74,6 +74,7 @@ function minus() {
 }
 
 function sumDay() {
+	document.getElementById("out3").innerHTML = "Сумма : "
 	var date1 = new Date(firstDate());
 	var date2 = new Date(secondDate());
 	var timeDiff = Math.abs(date2 - date1);
@@ -114,13 +115,14 @@ function outDate() {
 }
 
 function newDiscount(){
+	
 	var oldSum = document.getElementById("oldSum").value;
 	var percent = document.getElementById("percent").value;
 	var newSum = (oldSum / 100) * parseFloat(percent) - oldSum
-	document.querySelector(".newSum").innerHTML = newSum
+	
+	document.querySelector(".newSum").innerHTML = newSum || 0;
+	
 }
-
-
 
 
 

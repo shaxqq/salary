@@ -5,39 +5,53 @@
 
     &__input__top {
         display: flex;
-        justify-content: space-around;
         padding-top: 30px;
 
         &--section {
             display: flex;
             flex-direction: column;
-            
+            margin-left: 20px;
         }
         &--select {
             align-self: flex-end;
-            
-            border: 1px solid #cecece;
-	        background: #F6F6f6;
-            border-radius: 8px;
+            position: relative;
+            cursor: pointer;
+            border: none;
+            border-bottom: 1px solid #ced4da;
+            height: 25px;
             outline: none;
+            list-style: none;
+            padding: 0;
+            margin-left: 20px;
+        }
+
+        &--cursor {
+            font-size: 11px;
+            margin-left: 15px;
+        }
+
+        &--option {
+            display: none;
         }
     }
     
     &__input {
         display: flex;
-        justify-content: space-around;
         padding-top: 20px;
 
         &--section {
             display: flex;
             flex-direction: column;
-            
+            margin-left: 20px;
         }
 
         &--select {
-            border: 1px solid #cecece;
-	        background: #F6F6f6;
-            border-radius: 8px;
+            align-self: flex-end;
+            position: relative;
+            cursor: pointer;
+            border: none;
+            border-bottom: 1px solid #ced4da;
+            height: 25px;
             outline: none;
         }
     }
@@ -45,25 +59,17 @@
     &__date {
         text-align: center;
     }
-}
 
-input {
-	font-size: 13px;
-	padding: 4px 0 4px 8px;
-	border: 1px solid #cecece;
-	background: #F6F6f6;
-    border-radius: 8px;
-    outline: none;
-}
- button {
-    font-size: 13px;
-	padding: 7px 10px 7px 10px;
-	border: 1px solid #cecece;
-	background: #F6F6f6;
-    border-radius: 8px;
-    outline: none;
-
-        &:hover {
-            box-shadow: inset 10px 0px 30px rgba(52, 55, 255, 0.884);
+    &__discount {
+        display: flex;
+        align-items: flex-end;
+        
+        &--button {
+            margin-left: 20px;
+        }
     }
- }
+}
+.newSum {
+    margin: 0 0 0 40px;
+    
+}
