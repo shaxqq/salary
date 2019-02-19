@@ -61,6 +61,17 @@ function secondDate() {
 	return endDate
 }
 
+function minus() {
+	var minus = document.getElementById('minus').value;
+	if(minus == null || minus == '' || minus == undefined){
+		minus = 0;
+	} else {
+		minus =  parseInt(minus);
+	}
+	console.log("minus", minus)
+	return minus
+	// return m
+}
 
 function sumDay() {
 	var date1 = new Date(firstDate());
@@ -96,11 +107,17 @@ function minus() {
 
 	// return m
 }
-
 function outDate() {
 	var res = document.getElementById("outDate");
 	var outDate = firstDate() + secondDate() + sumDay();
 	res.value = outDate;
+}
+
+function newDiscount(){
+	var oldSum = document.getElementById("oldSum").value;
+	var percent = document.getElementById("percent").value;
+	var newSum = (oldSum / 100) * parseFloat(percent) - oldSum
+	document.querySelector(".newSum").innerHTML = newSum
 }
 
 
